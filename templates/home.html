@@ -1,3 +1,7 @@
 {% for post in blogposts %}
-    {{ post.title }} by {{ post.author.name }}
+    <div>
+        <h1>{{ post.title }}</h1>
+        <h2>by: {{ post.author.name }}</h2>
+    </div>
+    <hr/>
 {% endfor %}
